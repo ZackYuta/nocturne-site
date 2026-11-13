@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>使い方｜Nocturne - Mac の Safari を、Mac らしいダークモードに</title>
+<meta name="description" content="Nocturne の入れ方と使い方。Safari で有効にする手順、使うサイトだけに絞る方法、時間帯・テーマ・明るさの設定、うまく表示されないときの対処を案内します。">
+<meta name="theme-color" content="#161618" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nocturne">
+<meta property="og:title" content="使い方｜Nocturne">
+<meta property="og:description" content="Nocturne の入れ方と使い方。Safari で有効にする手順、使うサイトだけに絞る方法、設定の説明。">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://zackyuta.github.io/nocturne-site/how-to/">
+<meta property="og:url" content="https://zackyuta.github.io/nocturne-site/how-to/">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="../"><img class="logo-img" src="../assets/icon-96.png" width="30" height="30" alt=""><span>Nocturne</span></a>
+    <nav class="site-nav" aria-label="メインメニュー">
+      <a class="is-wide-only" href="../#features">特長</a><a href="../how-to/" aria-current="page">使い方</a><a href="../privacy/">プライバシー</a><a class="is-wide-only" href="../support/">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<nav class="breadcrumb container" aria-label="現在の位置">
+  <ol><li><a href="../">Nocturne</a></li><li aria-current="page">使い方</li></ol>
+</nav>
+<div class="container">
+  <div class="page-head">
+    <h1>使い方</h1>
+    <p>入れてから、夜に使えるようになるまでの手順です。数分で終わります。</p>
+  </div>
+
+  <ul class="toc" aria-label="このページの内容">
+    <li><a href="#install">1. 入れて、Safari で有効にする</a></li>
+    <li><a href="#allow">2. サイトでの許可</a></li>
+    <li><a href="#limit-sites">使うサイトだけに絞る</a></li>
+    <li><a href="#settings">3. 見え方を整える</a></li>
+    <li><a href="#options">Safari の設定画面から変える</a></li>
+    <li><a href="#trouble">うまく表示されないとき</a></li>
+  </ul>
+
+  <section class="howto" id="install" aria-labelledby="install-title">
+    <h2 id="install-title">1. 入れて、Safari で有効にする</h2>
+    <ol class="howto-steps">
+      <li><h3>App Store から入れる</h3><p>Mac App Store で「Nocturne」を入れます。</p></li>
+      <li><h3>Nocturne のアプリを一度開く</h3><p>アプリケーションフォルダの Nocturne を開くと、Safari に機能拡張が登録されます。開いた画面の「終了して Safari の設定を開く…」から次の手順へ進めます。</p></li>
+      <li><h3>Safari で Nocturne をオンにする</h3><p>Safari の設定 →<span class="settings-path">機能拡張</span>→ 一覧の「Nocturne」にチェックを入れます。</p></li>
+    </ol>
+  </section>
+
+  <section class="howto" id="allow" aria-labelledby="allow-title">
+    <h2 id="allow-title">2. サイトでの許可</h2>
+    <p>Safari は、機能拡張がサイトで動く前に許可を求めます。ツールバーの月のアイコンを押すと、許可の選び方が表示されます。</p>
+    <ol class="howto-steps">
+      <li><h3>すべてのサイトで使う場合</h3><p>月のアイコン →「すべての Web サイトで常に許可」を選びます。明るいサイトを開くと、自動でダーク表示になります。</p></li>
+      <li><h3>一部のサイトだけで使う場合</h3><p>使いたいサイトを開いて、月のアイコン →「この Web サイトで常に許可」を選びます。サイトごとに繰り返します。まとめて設定するときは、次の「使うサイトだけに絞る」を見てください。</p></li>
+    </ol>
+    <div class="callout">
+      <strong class="label">「Web ページの内容を読み取り・変更できる」という表示について</strong>
+      <p>色を置き換えるために必要な権限なので、Safari が必ず表示します。Nocturne が読むのはページの色の指定（CSS）だけで、外部へは何も送りません。くわしくは<a href="../privacy/">プライバシーポリシー</a>をご覧ください。</p>
+    </div>
+  </section>
+
+  <section class="howto" id="limit-sites" aria-labelledby="limit-title">
+    <h2 id="limit-title">使うサイトだけに絞る</h2>
+    <p>すべてのサイトで許可しなくても使えます。許可していないサイトでは、Nocturne はページを一切読みません。</p>
+    <ol class="howto-steps">
+      <li><h3>Safari の設定の「Web サイト」を開く</h3><p>Safari の設定 →<span class="settings-path">Web サイト</span>を開き、左の一覧の下のほうにある<span class="settings-path">Nocturne</span>を選びます。</p></li>
+      <li><h3>使うサイトを「許可」にする</h3><p>右側に、これまでに開いたサイトが並びます。使いたいサイトを「許可」にします。</p></li>
+      <li><h3>ほかのサイトを「拒否」にする</h3><p>右下の「その他の Web サイトを訪問時」を「拒否」にすると、一覧で許可したサイトだけで動きます。「確認」にすると、サイトを開くたびに月のアイコンで選べます。</p></li>
+    </ol>
+    <p>許可はしたまま、Nocturne の中でサイトごとにオフにすることもできます（月のアイコン →「このサイト」→「オフ」）。</p>
+  </section>
+
+  <section class="howto" id="settings" aria-labelledby="settings-title">
+    <h2 id="settings-title">3. 見え方を整える</h2>
+    <p>ツールバーの月のアイコンを押すと、次の設定ができます。変更はすぐに開いているページへ反映されます。</p>
+    <figure class="figure narrow">
+      <img src="../assets/shots/popup.png" width="640" height="1520" alt="Nocturne のポップアップ。上から、全体のスイッチ、このサイト、ダークにする時間帯、テーマ、3つのスライダー" loading="lazy">
+      <figcaption>ツールバーの月のアイコンを押したところ</figcaption>
+    </figure>
+    <div class="table-wrap">
+      <table class="plain">
+        <tr><th scope="row">右上のスイッチ</th><td>すべてのサイトでのオン・オフ。</td></tr>
+        <tr><th scope="row">このサイト</th><td><strong>自動</strong>：明るいサイトだけダークにし、もともと暗いサイトはそのまま。<br><strong>常にダーク</strong>：サイトの配色や時間帯に関係なくダークに。<br><strong>オフ</strong>：このサイトでは何もしない。</td></tr>
+        <tr><th scope="row">ダークにする時間帯</th><td><strong>いつでも</strong>、または<strong>時間帯を指定</strong>（例: 19:00〜07:00。日をまたいでも可）。時間帯の外では、「常にダーク」にしたサイト以外は元の表示に戻ります。時刻が来ると、開いているページも自動で切り替わります。</td></tr>
+        <tr><th scope="row">テーマ</th><td><strong>Graphite</strong>（macOS 標準の灰）、<strong>Midnight</strong>（青みのある濃紺）、<strong>Obsidian</strong>（より深い黒）。</td></tr>
+        <tr><th scope="row">文字の明るさ</th><td>85〜100%。暗い部屋では少し下げると目が楽です。</td></tr>
+        <tr><th scope="row">あたたかさ</th><td>0〜100%。面と文字に琥珀色を少し混ぜます。</td></tr>
+        <tr><th scope="row">画像の明るさ</th><td>60〜100%。写真や動画の明るさを落とします（色は反転しません）。</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="howto" id="options" aria-labelledby="options-title">
+    <h2 id="options-title">Safari の設定画面から変える</h2>
+    <p>Safari の設定 →<span class="settings-path">機能拡張</span>→ Nocturne →「設定…」からも、時間帯・テーマ・明るさを変えられます。ここでは、「常にダーク」「オフ」にしたサイトの一覧を見て、「自動に戻す」で元に戻せます。Nocturne が読むもの・送らないものの説明もここにあります。</p>
+    <figure class="figure narrow">
+      <img src="../assets/shots/options.png" width="1040" height="2360" alt="Safari の設定から開く Nocturne の設定画面。サイトごとの設定の一覧、時間帯、テーマ、スライダー、Nocturne が読むもの・送らないものの説明" loading="lazy">
+      <figcaption>Safari の設定から開く設定画面</figcaption>
+    </figure>
+  </section>
+
+  <section class="howto" id="trouble" aria-labelledby="trouble-title">
+    <h2 id="trouble-title">うまく表示されないとき</h2>
+    <div class="faq">
+      <details><summary>月のアイコンが出ない／ダークにならない</summary><div class="answer"><p>Safari の設定 →<span class="settings-path">機能拡張</span>で Nocturne にチェックが入っているか、そのサイトで許可しているかを確認してください。それでも変わらないときは、Safari を終了（⌘Q）して開き直してください。</p></div></details>
+      <details><summary>アップデートしたのに新しい機能が出ない</summary><div class="answer"><p>Safari は、起動中に読み込んだ機能拡張を使い続けます。Safari を終了（⌘Q）して開き直してください。</p></div></details>
+      <details><summary>一部だけ明るいまま残る</summary><div class="answer"><p>画像として描かれた背景などは置き換えられないことがあります。許可するサイトを絞っている場合は、CSS を別のドメインから読み込んでいるサイトで一部が置き換わらないことがあります。月のアイコン →「このサイト」→「常にダーク」も試してください。</p></div></details>
+      <details><summary>夜なのにダークにならない</summary><div class="answer"><p>「ダークにする時間帯」を指定している場合、時間帯の外では元の表示に戻ります。また、サイトの設定が「自動」で、そのサイトがもともと暗いと判断された場合は、そのまま表示します。</p></div></details>
+    </div>
+    <p style="margin-top:24px">解決しないときは<a href="../support/">お問い合わせ</a>へ。</p>
+  </section>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="../"><img class="logo-img" src="../assets/icon-96.png" width="30" height="30" alt=""><span>Nocturne</span></a>
+        <p>明るいサイトを、Mac らしいダークモードに。<br>お問い合わせは X（<a href="https://x.com/YutaZacky" rel="noopener">@YutaZacky</a>）へ。</p>
+      </div>
+      <nav class="footer-nav" aria-label="サイト内のページ"><ul><li><a href="../">トップ</a></li><li><a href="../how-to/">使い方</a></li><li><a href="../support/">お問い合わせ</a></li><li><a href="../privacy/">プライバシーポリシー</a></li></ul></nav>
+    </div>
+    <div class="legal">
+      <p>Apple、Mac、macOS、Safari は、米国その他の国で登録された Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。</p>
+      <p>&copy; 2026 Nocturne 開発者</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

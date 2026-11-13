@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zackyuta.github.io/nocturne-site/sitemap.xml

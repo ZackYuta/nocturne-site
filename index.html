@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nocturne - Mac の Safari を、Mac らしいダークモードに</title>
+<meta name="description" content="明るい Web サイトを、色の反転ではなく macOS のダークモードの色づかいに置き換えて表示する Safari 拡張機能。読むのはページの色の指定（CSS）だけで、外部へは何も送りません。">
+<meta name="theme-color" content="#161618" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nocturne">
+<meta property="og:title" content="Nocturne - Mac の Safari を、Mac らしいダークモードに">
+<meta property="og:description" content="明るい Web サイトを、色の反転ではなく macOS のダークモードの色づかいに置き換えて表示する Safari 拡張機能。">
+<meta property="og:image" content="https://zackyuta.github.io/nocturne-site/assets/shots/after.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://zackyuta.github.io/nocturne-site/">
+<meta property="og:url" content="https://zackyuta.github.io/nocturne-site/">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Nocturne",
+  "operatingSystem": "macOS",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "明るい Web サイトを、色の反転ではなく macOS のダークモードの色づかいに置き換えて表示する Safari 拡張機能。",
+  "url": "https://zackyuta.github.io/nocturne-site/"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="./"><img class="logo-img" src="assets/icon-96.png" width="30" height="30" alt=""><span>Nocturne</span></a>
+    <nav class="site-nav" aria-label="メインメニュー">
+      <a class="is-wide-only" href="#features">特長</a><a href="how-to/">使い方</a><a href="privacy/">プライバシー</a><a class="is-wide-only" href="support/">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="container-wide">
+    <div class="hero-text">
+      <span class="eyebrow">Mac の Safari 用の機能拡張</span>
+      <h1>明るいサイトを、<span class="nowrap">Mac らしい</span><span class="nowrap">ダークモードに。</span></h1>
+      <p class="hero-sub"><strong>色を反転させずに、macOS のダークモードと同じ色の段階へ置き換えます。</strong><br>
+        夜、明かりを落とした部屋で管理画面やドキュメントを見ても、まぶしくありません。</p>
+      <div class="hero-actions">
+        <a class="button" href="how-to/">使い方を見る</a>
+        <a class="button secondary" href="#privacy">読むもの・送らないもの</a>
+      </div>
+      <ul class="hero-points" aria-label="安心のポイント">
+        <li>読むのは色の指定（CSS）だけ</li><li>外部へ送信なし</li><li>アカウント登録なし</li><li>使うサイトだけに絞れる</li>
+      </ul>
+    </div>
+    <div class="compare">
+      <figure>
+        <img src="assets/shots/before.png" width="2200" height="1280" alt="Nocturne を使う前の管理画面。白いカードと灰色の背景で、全体が明るい">
+        <figcaption>使う前</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/shots/after.png" width="2200" height="1280" alt="Nocturne を使った後の同じ管理画面。背景は濃い灰色、カードは一段明るい灰色になり、青いボタンや赤い警告は色味を保ったまま読みやすい明るさになっている">
+        <figcaption>使った後（テーマ Graphite）。画面は説明用の架空の管理画面です</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="container-wide">
+    <span class="eyebrow">特長</span>
+    <h2 id="features-title">反転ではなく、置き換え。</h2>
+    <p class="section-lead">色を一つずつ「どんな役割の色か」で見分けて、macOS のダークモードの色へ置き換えます。</p>
+    <ul class="features">
+      <li class="feature"><h3>面の奥行きを保つ</h3><p>白いカードはウインドウの地の色に、灰色のページの地は一段奥に、灰色の部品は一段手前に。明るいサイトの重なりが、暗い画面でもそのまま分かります。</p></li>
+      <li class="feature"><h3>色味を残す</h3><p>青いリンク、赤いエラー、緑のステータスは、色相を保ったまま暗い面で読める明るさへ。反転のように色が別物になりません。</p></li>
+      <li class="feature"><h3>読みやすさを確かめた配色</h3><p>本文・補足の文字やボタンの文字は、WCAG 2.2 AA（4.5:1）以上のコントラストになるよう調整しています。</p></li>
+      <li class="feature"><h3>写真は反転しない</h3><p>写真や動画は元の色のまま、明るさだけを少し落とします。落とす量は変えられます。</p></li>
+      <li class="feature"><h3>もともと暗いサイトはそのまま</h3><p>ダークモードを持つサイトは自動で見分けて、手を加えません。サイトごとに「常にダーク」「オフ」も選べます。</p></li>
+      <li class="feature"><h3>夜だけダークに</h3><p>「19:00〜7:00」のように時間帯を決めると、その間だけダーク表示にします。時刻が来ると、開いているページも切り替わります。</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="settings-title">
+  <div class="container-wide split">
+    <div>
+      <span class="eyebrow">設定</span>
+      <h2 id="settings-title">ツールバーの月のアイコンから。</h2>
+      <p class="section-lead">変更はすぐに開いているページへ反映されます。</p>
+      <ul class="settings-list">
+        <li><strong>このサイト</strong><span>自動（もともと暗いサイトはそのまま）／常にダーク／オフ</span></li>
+        <li><strong>ダークにする時間帯</strong><span>いつでも／時間帯を指定（日をまたいでも可）</span></li>
+        <li><strong>テーマ</strong><span>Graphite（macOS 標準の灰）／Midnight（青みのある濃紺）／Obsidian（より深い黒）</span></li>
+        <li><strong>文字の明るさ・あたたかさ・画像の明るさ</strong><span>暗い部屋では、文字を少し暗く、あたたかさを少し上げると目が楽です</span></li>
+      </ul>
+      <p style="margin-top:24px"><a href="how-to/#settings">設定のくわしい説明</a></p>
+    </div>
+    <figure class="shot-frame">
+      <img src="assets/shots/popup.png" width="640" height="1520" alt="Nocturne のポップアップ。このサイトの動作、ダークにする時間帯、テーマ、文字の明るさ・あたたかさ・画像の明るさのスライダーが並んでいる" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="privacy" aria-labelledby="privacy-title">
+  <div class="container">
+    <span class="eyebrow">安心して使うために</span>
+    <h2 id="privacy-title">読むもの・送らないもの。</h2>
+    <p class="section-lead">Safari の「機能拡張」の画面には「Web ページの内容を読み取り・変更できる」という注意が表示されます。色を置き換えるにはこの権限が必要だからです。Nocturne が実際に行うことは、次のとおりです。</p>
+    <ul class="trust">
+      <li><strong>読むのはページの色の指定（CSS）だけ</strong><span class="desc">スタイルシートと、要素に書かれた色を読んで、暗い配色に置き換えます。ページの文章や、フォームに入力した内容を読んだり保存したりはしません。</span></li>
+      <li><strong>外部へは何も送りません</strong><span class="desc">閲覧履歴・ページの内容・設定を、開発者を含むどこにも送りません。広告や利用状況の計測も入っていません。</span></li>
+      <li><strong>CSS を取り寄せるときも Cookie を付けません</strong><span class="desc">ページが別の場所から読み込んでいる CSS ファイルは、色を読むために取り寄せ直します。その際はログイン情報（Cookie）を付けず、CSS ファイル以外は受け取りません。</span></li>
+      <li><strong>設定はこの Mac の中だけ</strong><span class="desc">テーマや時間帯などの設定は、Safari の機能拡張用の保存領域に置かれます。アカウント登録もありません。</span></li>
+    </ul>
+
+    <div class="callout">
+      <strong class="label">気になる場合は、使うサイトだけに絞れます</strong>
+      <p>すべてのサイトで許可する必要はありません。Safari の設定で、Nocturne が動くサイトを選べます。許可していないサイトでは、Nocturne はページを一切読みません。</p>
+      <ol>
+        <li>Safari の設定 →<span class="settings-path">Web サイト</span>を開く</li>
+        <li>左の一覧で<span class="settings-path">Nocturne</span>を選ぶ</li>
+        <li>使うサイトを「許可」に、右下の「その他の Web サイトを訪問時」を「拒否」または「確認」にする</li>
+      </ol>
+      <p><a href="how-to/#limit-sites">手順をくわしく見る</a></p>
+    </div>
+    <p><a href="privacy/">プライバシーポリシーを読む</a></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="faq-title">
+  <div class="container">
+    <span class="eyebrow">よくある質問</span>
+    <h2 id="faq-title">気になること。</h2>
+    <div class="faq">
+      <details><summary>Safari に「Web ページの内容を読み取り・変更できる」と出ます。大丈夫ですか？</summary><div class="answer"><p>ページの色を置き換える機能拡張には、この権限が必ず必要です。Nocturne が読むのは色の指定（CSS）だけで、外部へは何も送りません。気になる場合は、<a href="how-to/#limit-sites">使うサイトだけを許可する</a>こともできます。</p></div></details>
+      <details><summary>一部の色が明るいまま残ります。</summary><div class="answer"><p>画像として描かれた背景や、サイトが特殊な方法で描いている部品は置き換えられないことがあります。また、許可するサイトを絞っている場合、CSS を別のドメインから読み込んでいるサイトでは、一部が置き換わらないことがあります。気になるサイトは、月のアイコンから「常にダーク」を試してください。</p></div></details>
+      <details><summary>もともとダークモードがあるサイトはどうなりますか？</summary><div class="answer"><p>サイトの設定が「自動」なら、暗いサイトだと見分けてそのまま表示します。AWS マネジメントコンソールのように、サイト側でダークモードを選べる場合は、そちらを使うのがいちばんきれいです。</p></div></details>
+      <details><summary>料金はかかりますか？</summary><div class="answer"><p>アプリ内課金や月額料金はありません。</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section final-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <h2 id="cta-title">今夜から、まぶしくない Safari に。</h2>
+    <div class="hero-actions">
+      <a class="button" href="how-to/">入れ方と使い方</a>
+    </div>
+    <p class="cta-note">Mac App Store で公開予定です。</p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="./"><img class="logo-img" src="assets/icon-96.png" width="30" height="30" alt=""><span>Nocturne</span></a>
+        <p>明るいサイトを、Mac らしいダークモードに。<br>お問い合わせは X（<a href="https://x.com/YutaZacky" rel="noopener">@YutaZacky</a>）へ。</p>
+      </div>
+      <nav class="footer-nav" aria-label="サイト内のページ"><ul><li><a href="./">トップ</a></li><li><a href="how-to/">使い方</a></li><li><a href="support/">お問い合わせ</a></li><li><a href="privacy/">プライバシーポリシー</a></li></ul></nav>
+    </div>
+    <div class="legal">
+      <p>Apple、Mac、macOS、Safari は、米国その他の国で登録された Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。AWS は Amazon.com, Inc. またはその関連会社の商標です。</p>
+      <p>&copy; 2026 Nocturne 開発者</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
